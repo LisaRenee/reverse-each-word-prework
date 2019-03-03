@@ -1,7 +1,17 @@
-def reverse_each_word(sentence)
+def reverse_each_word(sentence1)
+  words = sentence1.split(" ")
+  new_array = []
+  words.each() do |word|
+  new_array << word.reverse
+  end
+  new_array.join(" ")
+end
 
-  words = sentence.split(" ").collect() do |word|
-    word.reverse
-    end
-    words.join(" ")
+def reverse_each_word(sentence2)
+  words = sentence2.split(" ")
+  new_array = []
+  words.collect do |word|
+    new_array << word.reverse
+  end
+  new_array.join(" ")
 end
